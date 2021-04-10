@@ -1,0 +1,138 @@
+Begin Object Class=/Script/LevelSequence.LevelSequence Name="Cam2"
+   Begin Object Class=/Script/MovieScene.MovieScene Name="MovieScene_0"
+      Begin Object Class=/Script/MovieSceneTracks.MovieSceneFloatTrack Name="MovieSceneFloatTrack_0"
+         Begin Object Class=/Script/MovieSceneTracks.MovieSceneFloatSection Name="MovieSceneFloatSection_0"
+            Begin Object Class=/Script/MovieScene.MovieSceneBuiltInEasingFunction Name="EaseOutFunction" Archetype=MovieSceneBuiltInEasingFunction'/Script/MovieSceneTracks.Default__MovieSceneFloatSection:EaseOutFunction'
+            End Object
+            Begin Object Class=/Script/MovieScene.MovieSceneBuiltInEasingFunction Name="EaseInFunction" Archetype=MovieSceneBuiltInEasingFunction'/Script/MovieSceneTracks.Default__MovieSceneFloatSection:EaseInFunction'
+            End Object
+         End Object
+      End Object
+      Begin Object Class=/Script/MovieSceneTracks.MovieSceneCameraCutTrack Name="MovieSceneCameraCutTrack_0"
+         Begin Object Class=/Script/MovieSceneTracks.MovieSceneCameraCutSection Name="MovieSceneCameraCutSection_1"
+            Begin Object Class=/Script/MovieScene.MovieSceneBuiltInEasingFunction Name="EaseOutFunction" Archetype=MovieSceneBuiltInEasingFunction'/Script/MovieSceneTracks.Default__MovieSceneCameraCutSection:EaseOutFunction'
+            End Object
+            Begin Object Class=/Script/MovieScene.MovieSceneBuiltInEasingFunction Name="EaseInFunction" Archetype=MovieSceneBuiltInEasingFunction'/Script/MovieSceneTracks.Default__MovieSceneCameraCutSection:EaseInFunction'
+            End Object
+         End Object
+      End Object
+      Begin Object Class=/Script/MovieSceneTracks.MovieScene3DTransformTrack Name="MovieScene3DTransformTrack_0"
+         Begin Object Class=/Script/MovieSceneTracks.MovieScene3DTransformSection Name="MovieScene3DTransformSection_0"
+            Begin Object Class=/Script/MovieScene.MovieSceneBuiltInEasingFunction Name="EaseOutFunction" Archetype=MovieSceneBuiltInEasingFunction'/Script/MovieSceneTracks.Default__MovieScene3DTransformSection:EaseOutFunction'
+            End Object
+            Begin Object Class=/Script/MovieScene.MovieSceneBuiltInEasingFunction Name="EaseInFunction" Archetype=MovieSceneBuiltInEasingFunction'/Script/MovieSceneTracks.Default__MovieScene3DTransformSection:EaseInFunction'
+            End Object
+         End Object
+      End Object
+      Begin Object Class=/Script/MovieSceneTracks.MovieScene3DAttachTrack Name="MovieScene3DAttachTrack_0"
+         Begin Object Class=/Script/MovieSceneTracks.MovieScene3DAttachSection Name="MovieScene3DAttachSection_0"
+            Begin Object Class=/Script/MovieScene.MovieSceneBuiltInEasingFunction Name="EaseOutFunction" Archetype=MovieSceneBuiltInEasingFunction'/Script/MovieSceneTracks.Default__MovieScene3DAttachSection:EaseOutFunction'
+            End Object
+            Begin Object Class=/Script/MovieScene.MovieSceneBuiltInEasingFunction Name="EaseInFunction" Archetype=MovieSceneBuiltInEasingFunction'/Script/MovieSceneTracks.Default__MovieScene3DAttachSection:EaseInFunction'
+            End Object
+         End Object
+      End Object
+      Begin Object Class=/Script/MovieScene.MovieSceneNodeGroupCollection Name="NodeGroupCollection" Archetype=MovieSceneNodeGroupCollection'/Script/MovieScene.Default__MovieScene:NodeGroupCollection'
+      End Object
+   End Object
+   Begin Object Name="MovieScene_0"
+      Begin Object Name="MovieSceneFloatTrack_0"
+         Begin Object Name="MovieSceneFloatSection_0"
+            Begin Object Name="EaseOutFunction"
+            End Object
+            Begin Object Name="EaseInFunction"
+            End Object
+            FloatCurve=(Times=((Value=-5600),(Value=574400),(Value=1226400),(Value=1572000),(Value=1693600),(Value=1757600)),Values=((Value=-0.000000,Tangent=(ArriveTangent=0.000000,LeaveTangent=0.000000),TangentMode=RCTM_User),(Value=0.300000,Tangent=(ArriveTangent=0.000001,LeaveTangent=0.000001),TangentMode=RCTM_User),(Value=0.700000,Tangent=(ArriveTangent=0.000001,LeaveTangent=0.000001),TangentMode=RCTM_User),(Value=0.993384,Tangent=(ArriveTangent=0.000000,LeaveTangent=0.000000)),(Value=1.000000,Tangent=(ArriveTangent=0.000000,LeaveTangent=0.000000),TangentMode=RCTM_User),(Value=1.000000)),bHasDefaultValue=True,TickResolution=(Numerator=24000))
+            Easing=(EaseIn=MovieSceneBuiltInEasingFunction'Cam2:MovieScene_0.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseInFunction',EaseOut=MovieSceneBuiltInEasingFunction'Cam2:MovieScene_0.MovieSceneFloatTrack_0.MovieSceneFloatSection_0.EaseOutFunction')
+            SectionRange=Open:0:Open:0
+            Signature=250D53894CEA7D6EC214F688328A0F83
+         End Object
+         UniqueTrackName="CurrentPositionOnRail"
+         PropertyBinding=(PropertyName="CurrentPositionOnRail",PropertyPath="CurrentPositionOnRail",bCanUseClassLookup=True)
+         Sections(0)=MovieSceneFloatSection'"MovieSceneFloatSection_0"'
+         DisplayName=NSLOCTEXT("UObjectDisplayNames", "CameraRig_Rail:CurrentPositionOnRail", "Current Position on Rail")
+         EvaluationFieldGuid=84F1AC08495726CDA355FFB377DC84E0
+         EvaluationField=(Entries=((Section=MovieSceneFloatSection'"MovieSceneFloatSection_0"',ForcedTime=(Value=-2147483648))))
+         SortingOrder=0
+         Signature=84F1AC08495726CDA355FFB377DC84E0
+      End Object
+      Begin Object Name="MovieSceneCameraCutTrack_0"
+         Begin Object Name="MovieSceneCameraCutSection_1"
+            Begin Object Name="EaseOutFunction"
+            End Object
+            Begin Object Name="EaseInFunction"
+            End Object
+            CameraBindingID=(Space=Local,Guid=E3CF601347342C8BE3F7AA815B4767E3)
+            InitialCameraCutTransform=(Rotation=(X=-0.003802,Y=-0.087073,Z=-0.043453,W=0.995247))
+            bHasInitialCameraCutTransform=True
+            Easing=(EaseIn=MovieSceneBuiltInEasingFunction'Cam2:MovieScene_0.MovieSceneCameraCutTrack_0.MovieSceneCameraCutSection_1.EaseInFunction',EaseOut=MovieSceneBuiltInEasingFunction'Cam2:MovieScene_0.MovieSceneCameraCutTrack_0.MovieSceneCameraCutSection_1.EaseOutFunction')
+            SectionRange=Inclusive:0:Exclusive:2153600
+            TimecodeSource=(DeltaFrame=(Value=-46400))
+            BlendType=(bIsValid=True)
+            Signature=1F41C54D4DFEDAA19E1D30AA4A63ECC1
+         End Object
+         Sections(0)=MovieSceneCameraCutSection'"MovieSceneCameraCutSection_1"'
+         EvaluationFieldGuid=4BFEAC30442BC7582C6D3BA8A3CC1BD5
+         EvaluationField=(Entries=((Section=MovieSceneCameraCutSection'"MovieSceneCameraCutSection_1"',Range=(LowerBound=(Type=Inclusive),UpperBound=(Type=Exclusive,Value=(Value=2153600))),ForcedTime=(Value=-2147483648))))
+         SortingOrder=0
+         Signature=4BFEAC30442BC7582C6D3BA8A3CC1BD5
+      End Object
+      Begin Object Name="MovieScene3DTransformTrack_0"
+         Begin Object Name="MovieScene3DTransformSection_0"
+            Begin Object Name="EaseOutFunction"
+            End Object
+            Begin Object Name="EaseInFunction"
+            End Object
+            Translation(0)=(TickResolution=(Numerator=24000))
+            Translation(1)=(TickResolution=(Numerator=24000))
+            Translation(2)=(TickResolution=(Numerator=24000))
+            Rotation(0)=(Times=((Value=6400),(Value=328000),(Value=656000),(Value=1144800),(Value=1350400),(Value=1607200)),Values=((Value=0.000000),(Value=0.000000),(Value=0.000000),(Value=0.000000),(Value=0.000129),(Value=0.000000)),DefaultValue=0.000004,TickResolution=(Numerator=24000))
+            Rotation(1)=(Times=((Value=6400),(Value=328000),(Value=656000),(Value=1144800),(Value=1350400),(Value=1607200)),Values=((Value=10.000000),(Value=5.000000,Tangent=(ArriveTangent=-0.000038,LeaveTangent=-0.000038)),(Value=-14.999992,Tangent=(ArriveTangent=-0.000067,LeaveTangent=-0.000067)),(Value=-50.000004,Tangent=(ArriveTangent=-0.000062,LeaveTangent=-0.000062)),(Value=-57.954830),(Value=-5.000000)),DefaultValue=10.106671,TickResolution=(Numerator=24000))
+            Rotation(2)=(Times=((Value=6400),(Value=328000),(Value=656000),(Value=1144800),(Value=1350400),(Value=1607200)),Values=((Value=-5.000000),(Value=5.000000),(Value=-40.000000),(Value=-14.999992),(Value=-20.972281,Tangent=(ArriveTangent=-0.000022,LeaveTangent=-0.000022)),(Value=-24.999996)),DefaultValue=-6.977987,TickResolution=(Numerator=24000))
+            Scale(0)=(TickResolution=(Numerator=24000))
+            Scale(1)=(TickResolution=(Numerator=24000))
+            Scale(2)=(TickResolution=(Numerator=24000))
+            Easing=(EaseIn=MovieSceneBuiltInEasingFunction'Cam2:MovieScene_0.MovieScene3DTransformTrack_0.MovieScene3DTransformSection_0.EaseInFunction',EaseOut=MovieSceneBuiltInEasingFunction'Cam2:MovieScene_0.MovieScene3DTransformTrack_0.MovieScene3DTransformSection_0.EaseOutFunction')
+            SectionRange=Open:0:Open:0
+            Signature=4F302D694438990A30B94A988CE5D6B9
+         End Object
+         Sections(0)=MovieScene3DTransformSection'"MovieScene3DTransformSection_0"'
+         EvaluationFieldGuid=4F5B65F848BEEA8FD52C3A8096FD9381
+         EvaluationField=(Entries=((Section=MovieScene3DTransformSection'"MovieScene3DTransformSection_0"',ForcedTime=(Value=-2147483648))))
+         SortingOrder=1
+         Signature=4F5B65F848BEEA8FD52C3A8096FD9381
+      End Object
+      Begin Object Name="MovieScene3DAttachTrack_0"
+         Begin Object Name="MovieScene3DAttachSection_0"
+            Begin Object Name="EaseOutFunction"
+            End Object
+            Begin Object Name="EaseInFunction"
+            End Object
+            ConstraintBindingID=(Guid=B2017B1946175E1DEFF51694E50144E9)
+            Easing=(EaseIn=MovieSceneBuiltInEasingFunction'Cam2:MovieScene_0.MovieScene3DAttachTrack_0.MovieScene3DAttachSection_0.EaseInFunction',EaseOut=MovieSceneBuiltInEasingFunction'Cam2:MovieScene_0.MovieScene3DAttachTrack_0.MovieScene3DAttachSection_0.EaseOutFunction')
+            SectionRange=Inclusive:0:Exclusive:2153600
+            Signature=C87E326445DE93F4DFF121AA7D1CADFA
+         End Object
+         ConstraintSections(0)=MovieScene3DAttachSection'"MovieScene3DAttachSection_0"'
+         EvaluationFieldGuid=3E1B09514FD85AB50BB267B9E97CB0D6
+         EvaluationField=(Entries=((Section=MovieScene3DAttachSection'"MovieScene3DAttachSection_0"',Range=(LowerBound=(Type=Inclusive),UpperBound=(Type=Exclusive,Value=(Value=2153600))),ForcedTime=(Value=-2147483648))))
+         SortingOrder=0
+         Signature=3E1B09514FD85AB50BB267B9E97CB0D6
+      End Object
+      Begin Object Name="NodeGroupCollection"
+      End Object
+      Possessables(0)=(Guid=E3CF601347342C8BE3F7AA815B4767E3,Name="CineCameraActor2",PossessedObjectClass=Class'"/Script/CinematicCamera.CineCameraActor"')
+      Possessables(1)=(Guid=B2017B1946175E1DEFF51694E50144E9,Name="CameraRig_Rail2",PossessedObjectClass=Class'"/Script/CinematicCamera.CameraRig_Rail"')
+      ObjectBindings(0)=(ObjectGuid=E3CF601347342C8BE3F7AA815B4767E3,BindingName="CineCameraActor2",Tracks=(MovieScene3DAttachTrack'"MovieScene3DAttachTrack_0"',MovieScene3DTransformTrack'"MovieScene3DTransformTrack_0"'),SortingOrder=2)
+      ObjectBindings(1)=(ObjectGuid=B2017B1946175E1DEFF51694E50144E9,BindingName="CameraRig_Rail2",Tracks=(MovieSceneFloatTrack'"MovieSceneFloatTrack_0"'),SortingOrder=1)
+      CameraCutTrack=MovieSceneCameraCutTrack'"MovieSceneCameraCutTrack_0"'
+      PlaybackRange=Inclusive:0:Exclusive:1704800
+      TickResolution=(Numerator=24000)
+      DisplayRate=(Numerator=30)
+      EditorData=(ExpansionStates=(("7B1E67EE4E56C313EC840E89167D8D3F.MovieScene3DTransformTrack_1", ()),("7B1E67EE4E56C313EC840E89167D8D3F.MovieScene3DTransformTrack_1.Location", ()),("E3CF601347342C8BE3F7AA815B4767E3", ()),("E3CF601347342C8BE3F7AA815B4767E3.MovieScene3DTransformTrack_0", ())),ViewStart=-2.336853,ViewEnd=106.555944,WorkStart=-10.123338,WorkEnd=3333.333333)
+      Signature=7F0A573A4E5149583B3CE19CF91DB102
+   End Object
+   MovieScene=MovieScene'"MovieScene_0"'
+   BindingReferences=(BindingIdToReferences=((E3CF601347342C8BE3F7AA815B4767E3, (References=((ExternalObjectPath=/Game/3_Levels/Laurel_Can_Work_Here.Laurel_Can_Work_Here:PersistentLevel.CineCameraActor_2)))),(B2017B1946175E1DEFF51694E50144E9, (References=((ExternalObjectPath=/Game/3_Levels/Laurel_Can_Work_Here.Laurel_Can_Work_Here:PersistentLevel.CameraRig_Rail2))))))
+   Signature=EA81E92643C90025BB58699A4A956F73
+End Object
